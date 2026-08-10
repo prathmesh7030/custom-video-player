@@ -21,3 +21,8 @@ function updatePlayIcon() {
     play.innerHTML = '<i class="fa fa-pause fa-2x"></i>';
   }
 }
+
+// Update progress & timestamp
+function updateProgress() {
+  progress.value = (video.currentTime / video.duration) * 100;
+}
