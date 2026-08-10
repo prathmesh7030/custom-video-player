@@ -22,7 +22,13 @@ function updatePlayIcon() {
   }
 }
 
-// Update progress & timestamp
+//  Update progress & timestamp
 function updateProgress() {
   progress.value = (video.currentTime / video.duration) * 100;
 }
+
+// Get the minutes
+  let mins = Math.floor(video.currentTime / 60);
+  if(mins < video.duration){
+    mins = '0' + String(mins);
+  }
