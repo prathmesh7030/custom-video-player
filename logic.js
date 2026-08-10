@@ -42,3 +42,8 @@ function updateProgress() {
 
   timestamp.innerHTML = `${mins}:${secs}`;
 }
+
+// Set video time to progress
+function setVideoProgress() {
+  video.currentTime = (+progress.value * video.duration) / 100;
+}
